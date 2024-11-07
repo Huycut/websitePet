@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row td">
         <div class="col-sm-12 col-lg-12">
-            <h4>Chó là Bạn</h4>
+            <h4>Chó </h4>
         </div>
     </div>
     <div class="row">
