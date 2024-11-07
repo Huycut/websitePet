@@ -1,0 +1,328 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9fb;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    padding: 20px 0;
+    border-bottom: 2px solid #dde0e3;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-right: 15px;
+}
+
+.Nweb {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.qc {
+    width: 100%;
+    max-height: 90px;
+    object-fit: cover;
+}
+
+/* Navigation menu styling */
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+header ul li {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #00f2fe;
+    background-color: #004aad;
+    transform: scale(1.05);
+}
+
+/* Content section */
+.content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.content h1, .content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Table styling */
+th {
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+}
+
+td img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styling */
+footer.tc {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.tc h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+footer.tc label, footer.tc p {
+    font-size: 14px;
+    color: #e6f7ff;
+}
+
+/* Specific classes */
+.menu {
+    background: #4facfe;
+    padding: 10px 0;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.row.td {
+    text-align: center;
+}
+
+/* Card styling */
+.col-lg-3.dv img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.col-lg-3.dv h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #444;
+}
+
+/* Information box styling */
+.nd {
+    padding: 20px;
+    width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Additional element styling */
+.igdv {
+    width: 220px;
+    height: 170px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tt {
+    display: flex;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border: 2px solid #b2ebf2;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tt:hover {
+    border: 2px solid #00acc1;
+    background-color: #e0f2f1;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 990px) {
+    .tt {
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header ul li {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .Nweb {
+        display: none;
+    }
+
+    .qc {
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    footer.tc {
+        padding: 10px;
+    }
+}
+/* Thêm lớp cho form và bảng để hiển thị đè lên */
+#booking-form {
+    display: none;  
+    position: fixed; 
+    top: 50%;        
+    left: 50%;       
+    transform: translate(-50%, -50%);  
+    background-color: #fff; 
+    padding: 30px 40px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+    z-index: 1050;  
+    max-width: 600px;
+    width: 100%; 
+}
+
+#booking-form h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#bookingForm .form-group {
+    margin-bottom: 20px;
+}
+
+#bookingForm label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #555;
+}
+
+#bookingForm input.form-control {
+    border-radius: 8px;  
+    border: 1px solid #ddd;  
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #f9f9f9; 
+    transition: border-color 0.3s ease, background-color 0.3s ease;  
+}
+
+#bookingForm input.form-control:focus {
+    border-color: #007bff; 
+    background-color: #fff;  
+    outline: none;
+}
+
+button {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;  
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+button.btn-secondary:hover {
+    background-color: #5a6268;  
+}
+
+#bookingDetails {
+    display: none;  
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bookingDetails table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bookingDetails table th, #bookingDetails table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#bookingDetails table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
